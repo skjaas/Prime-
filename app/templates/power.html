@@ -1,0 +1,25 @@
+<html>
+    <head>
+            <title>PRIME+ | POWER </title>
+        {% load static %}
+        <link href="{% static '/css/proview.css' %}" rel="stylesheet">
+    </head>
+    <body bgcolor="black">
+           <center>
+                <div>
+                        {% for powersupply in Power %}
+        
+                        <ul>
+                            <li>
+                                <a href="/ps/{{powersupply.id}}"><img src="{{powersupply.image}}" width="250" height="250"></a>
+                                <h3><font color="magenta"><a href="/ps/{{powersupply.id}}">{{powersupply.name}}</a></font></h3>
+                            </li>
+                        </ul>
+                        {% endfor %}
+                        <form action="http://127.0.0.1:8000/index/">
+                            <input type="submit" value="BACK TO HOME">
+                        </form>
+                     </div>
+           </center>
+    </body>
+</html>

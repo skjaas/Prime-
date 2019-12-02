@@ -1,0 +1,25 @@
+<html>
+    <head>
+        {% load static %}
+        <link href="{% static '/css/proview.css' %}" rel="stylesheet">
+        <title>PRIME+ | STORAGE  </title>
+    </head>
+    <body bgcolor="black">
+           <center>
+                <div>
+                        {% for storage in Store %}
+        
+                        <ul>
+                            <li>
+                                <a href="/sr/{{storage.id}}"><img src="{{storage.image}}" width="250" height="250"></a>
+                                <h3><font color="magenta"><a href="/sr/{{storage.id}}">{{storage.name}}</a></font></h3>
+                            </li>
+                        </ul>
+                        {% endfor %}
+                        <form action="http://127.0.0.1:8000/index/">
+                            <input type="submit" value="BACK TO HOME">
+                        </form>
+                     </div>
+           </center>
+    </body>
+</html>

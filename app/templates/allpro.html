@@ -1,0 +1,47 @@
+<html>
+    <head>
+            <title>PRIME+ | COOLING </title>
+        {% load static %}
+        <link href="{% static '/css/proview.css' %}" rel="stylesheet">
+    </head>
+    <body bgcolor="black">
+           <center>
+                <div>
+                        {% for coolingsystem in Cool %}
+        
+                        <ul>
+                            <li>
+                                <a href="/cs/{{coolingsystem.id}}"><img src="{{coolingsystem.image}}" width="250" height="250"></a>
+                                <h3><font color="magenta"><a href="/cs/{{coolingsystem.id}}">{{coolingsystem.name}}</a></font></h3>
+                                <p>
+                                    <table border="3">
+                                            <col width="130">
+                                            <col width="130">
+                                        <tr>
+                                            <td height="50"><font color="green"><center><h4>CATEGORY</h4></center></font></td>
+                                            <td height="50"><font color="green"><center><h4>{{coolingsystem.category}}</h4></center></font></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="50"><font color="green"><center><h4>SUBCATEGORY</h4></center></font></td>
+                                            <td height="50"><font color="green"><center><h4>{{coolingsystem.subcategory}}</h4></center></font></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="50"><font color="green"><center><h4>BRAND NAME</h4></center></font></td>
+                                            <td height="50"><font color="green"><center><h4>{{coolingsystem.brandname}}</h4></center></font></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="50"><font color="green"><center><h4>PRICE</h4></center></font></td>
+                                            <td height="50"><font color="green"><center><h4>{{coolingsystem.price}}RS./-</h4></center></font></td>
+                                        </tr>
+                                    </table>
+                                </p>
+                            </li>
+                        </ul>
+                        {% endfor %}
+                        <form action="http://127.0.0.1:8000/index/">
+                            <input type="submit" value="BACK TO HOME">
+                        </form>
+                     </div>
+           </center>
+    </body>
+</html>

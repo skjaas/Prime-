@@ -1,0 +1,15 @@
+.x{
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    background-color: black;
+  }
+
+.y{
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    background-color: rgb(41, 8, 71);
+  }

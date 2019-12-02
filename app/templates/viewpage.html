@@ -1,0 +1,185 @@
+<html>
+        <title>PRIME+ | VIEW</title>
+        <head>
+                {% load static %}
+                <link href="{% static 'css/style.css' %}" rel="stylesheet">
+                <meta charset="utf-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="description" content="Free Bootstrap Themes by Zerotheme dot com - Free Responsive Html5 Templates">
+                <meta name="author" content="https://www.Zerotheme.com">   
+                <title>PRIME+ | HOME </title>    
+                    <!-- Bootstrap Core CSS -->
+                <link href="{% static '/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+                <link href="{% static '/css/img.css' %}" rel="stylesheet">
+                        <!-- Custom CSS -->
+                <link href="{% static '/css/style.css' %}" rel="stylesheet">
+                <link href="{% static '/css/index.css' %}" rel="stylesheet">
+                <link href="{% static '/css/font.css' %}" rel="stylesheet">
+                        <!-- Custom Fonts -->
+                <link href="{% static '/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+                        
+                        <!-- Owl Carousel Assets -->
+                <link href="{% static '/owl-carousel/owl.carousel.css' %}" rel="stylesheet">
+                    <!-- <link href="owl-carousel/owl.theme.css" rel="stylesheet"> -->
+                        
+                        <!-- jQuery and Modernizr-->
+                <script src="{% static '/js/jquery-2.1.1.js' %}"></script>
+        </head>
+    <body>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+<header class="main-header">
+		
+	<div class="container text-center">
+		<a class="site-branding" href="index.html">
+			<h1 class="site-title">
+				PRIME+
+			</h1>
+			<p class="site-description">
+				New World - Digital World
+			</p>
+		</a><!-- .site-branding -->
+	</div>
+	
+	<!--Navigation-->
+	<div id="menu-wrapper">
+		<nav id="menu" class="navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+				</div>
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					
+						<ul class="main-navigation" class="index">
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>                           
+								<li><a href="http://127.0.0.1:8000/mypage/">HOME</a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#">CATEGORY</a>
+								  <ul>
+									  	<li><a href="http://127.0.0.1:8000/cabinet/">CABINET CASE</a></li>
+										<li><a href="http://127.0.0.1:8000/cooling/">COOLING SYSTEM</a></li>
+										<li><a href="http://127.0.0.1:8000/graphics/">GRAPHICS CARD</a></li>
+										<li><a href="http://127.0.0.1:8000/headphone/">HEADPHONE</a></li>
+										<li><a href="http://127.0.0.1:8000/laptop/">LAPTOP</a></li>
+										<li><a href="http://127.0.0.1:8000/memory/">MEMORY</a></li>
+										<li><a href="http://127.0.0.1:8000/monitor/">MONITOR</a></li>
+										<li><a href="http://127.0.0.1:8000/motherboard/">MOTHERBOARD</a></li>
+										<li><a href="http://127.0.0.1:8000/power/">POWER SUPPLY</a></li>
+										<li><a href="http://127.0.0.1:8000/processor/">PROCESSOR</a></li>
+										<li><a href="http://127.0.0.1:8000/storage/">STORAGE</a></li>
+								  </ul>
+								</li>			
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="http://127.0.0.1:8000/add/">ADD</a></li>  
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>     
+								<li><a href="http://127.0.0.1:8000/logout/">LOGOUT</a></li>                             
+
+							  </ul>
+							
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+</header>
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+<div class="container" class="bgimg">
+
+                <!-- Portfolio Item Heading -->
+                <br><br>
+                <h1 class="my-4"><font color="RED">{{Data.name}}</font> 
+                  <small><font color="green">{{Data.category}}</font></small>
+                </h1>
+              
+                <!-- Portfolio Item Row -->
+                <div class="row">
+              
+                  <div class="col-md-8">
+                    <img class="img-fluid" src="{{Data.image}}" alt="">
+                  </div>
+              
+                  <div class="col-md-4">
+                                <br><br>
+                    <h3 class="my-3">{{Data.name}}</h3>
+                    <p>
+                                <br><br>
+                                    <table border="5">
+                                                <col width="130">
+                                                <col width="80">
+                                            <tr>
+                                                    <td width="50%"><center><h6><font color="black">CATEGORY</font></h6></center></td>
+                                                    <td width="70%"><center><h6><font color="black">{{Data.category}}</font></h6></center></td>
+                                            </tr>
+                                            <tr>
+                                                    <td width="50%"><center><h6><font color="black">SUBCATEGORY</font></h6></center></td>
+                                                    <td width="50%"><center><h6><font color="black">{{Data.subcategory}}</font></h6></center></td>
+                                            </tr>
+                                            <tr>
+                                                        <td width="50%"><center><h6><font color="black">BRAND</font></h6></center></td>
+                                                        <td width="50%"><center><h6><font color="black">{{Data.brandname}}</font></h6></center></td>
+                                            </tr>
+                                            <tr>
+                                                        <td width="50%"><center><h6><font color="black">PRICE</font></h6></center></td>
+                                                        <td width="50%"><center><h6><font color="black">{{Data.price}}.00 RS./-</font></h6></center></td>
+                                            </tr>
+                                    </table>
+                    </p>
+                  </div>
+              
+                </div>
+                <!-- /.row -->
+              
+                <!-- Related Projects Row -->
+                <h3 class="my-4">Related Items</h3>
+              
+                <div class="row">
+              
+                  <div class="col-md-3 col-sm-6 mb-4">
+                                <a href="http://127.0.0.1:8000/cabinet/">
+                        <h4><font color="magenta">CABINET CASE</font></h4>
+                          <img class="img-fluid" src="{% static 'images/cab3.jpg' %}" alt="" width="250" height="250">
+                        </a>
+                  </div>
+              
+                  <div class="col-md-3 col-sm-6 mb-4">
+                                <a href="http://127.0.0.1:8000/processor/">
+                                <h4><font color="magenta">PROCESSOR</font></h4>
+                    
+                          <img class="img-fluid" src="{% static 'images/pro2.jpg' %}" alt="" width="250" height="250">
+                        </a>
+                  </div>
+              
+                  <div class="col-md-3 col-sm-6 mb-4">
+                                <a href="http://127.0.0.1:8000/monitor/">
+                                <h4><font color="magenta">MONITOR</font></h4>
+                          <img class="img-fluid" src="{% static 'images/mon.jpg' %}" alt="" width="250" height="250">
+                        </a>
+                  </div>
+              
+                  <div class="col-md-3 col-sm-6 mb-4">
+                                <a href="http://127.0.0.1:8000/laptop/">
+                                <h4><font color="magenta">LAPTOP</font></h4>
+
+                          <img class="img-fluid" src="{% static 'images/lap.jpg' %}" alt="" width="250" height="250">
+                        </a>
+                  </div>
+              
+                </div>
+                <!-- /.row -->
+              
+              </div>
+              <!-- /.container -->
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+    </body>
+</html>

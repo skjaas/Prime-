@@ -1,0 +1,26 @@
+
+<html>
+        <head>
+                <title>PRIME+ | MOTHERBOARD </title>
+            {% load static %}
+            <link href="{% static '/css/proview.css' %}" rel="stylesheet">
+        </head>
+        <body bgcolor="black">
+               <center>
+                    <div>
+                            {% for motherboard in Board %}
+            
+                            <ul>
+                                <li>
+                                    <a href="/mb/{{motherboard.id}}"><img src="{{motherboard.image}}" width="250" height="250"></a>
+                                    <h3><font color="magenta"><a href="/mb/{{motherboard.id}}">{{motherboard.name}}</a></font></h3>
+                                </li>
+                            </ul>
+                            {% endfor %}                            
+                            <form action="http://127.0.0.1:8000/index/">
+                                <input type="submit" value="BACK TO HOME">
+                            </form>
+                         </div>
+               </center>
+        </body>
+    </html>
